@@ -1,0 +1,36 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  background-color: black;
+}
+.MovieColum {
+  position: relative;
+  overflow: hidden;
+}
+
+.MovieOvelay {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  transition: top 0.5s ease;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 3px 20px;
+  text-align: center;
+}
+
+.MovieColum .MovieImage {
+  transition: 1.5s ease-in-out;
+}
+
+.MovieColum:hover .MovieImage {
+  transform: scale(1.5);
+}
+
+.MovieColum:hover .MovieOvelay {
+  top: 0;
+}
+.Title {
+  text-wrap: nowrap;
+}
